@@ -4,7 +4,7 @@ module.exports = {
     'func-names': 0,
     'no-multi-spaces': [1, { exceptions: { VariableDeclarator: true } }],
     'vars-on-top': 0,
-	'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'never'],
     'max-len': ['error', 160, 2]
   },
   globals: {
