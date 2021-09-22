@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-surikat",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Surikat's way of coding in JS",
   "author": "Surikat <npm@surikat.se>",
   "license": "MIT",
