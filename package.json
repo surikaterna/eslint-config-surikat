@@ -6,10 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-react": "^7.26.0"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.29.4"
   },
   "peerDependencies": {
-    "babel-eslint": "^10.x"
+    "@babel/eslint-parser": "^7.x"
   }
 }
