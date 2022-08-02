@@ -4,14 +4,17 @@ module.exports = {
     'airbnb/hooks',
     'airbnb-typescript',
     'eslint:recommended',
+    'plugin:promise/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:jest/recommended',
-    'prettier',
+    'prettier'
   ],
   parserOptions: {
     project: './tsconfig.json'
   },
+  plugins: [
+    '@typescript-eslint'
+  ],
   parser: '@typescript-eslint/parser',
   rules: {
     '@typescript-eslint/comma-dangle': ['error', 'never'],
@@ -29,12 +32,28 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'object-curly-newline': 'off',
     'prefer-destructuring': 'off',
-    'prefer-object-spread': 'off',
+    'prefer-object-spread': 'off'
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": ["*.(spec|test).[jt]sx?"],
+      "plugins": ["jest"],
+      "extends": [
+        'plugin:jest/recommended',
+        'plugin:jest/style'
+      ]
+    }
+  ],
   env: {
     node: true,
     browser: true,
-    jest: true,
+    'jest/globals': true,
     mocha: true
   }
 }
