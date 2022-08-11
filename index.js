@@ -32,7 +32,10 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'object-curly-newline': 'off',
     'prefer-destructuring': 'off',
-    'prefer-object-spread': 'off'
+    'prefer-object-spread': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+    '@typescript-eslint/no-unsafe-call': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn'
   },
   "overrides": [
     {
