@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-surikat",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Surikat's way of coding in TS",
   "author": "Surikat <npm@surikat.se>",
   "license": "MIT",
