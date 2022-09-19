@@ -18,6 +18,13 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   rules: {
     '@typescript-eslint/comma-dangle': ['error', 'never'],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        variables: false
+      }
+    ],
     'class-methods-use-this': 'off',
     'func-names': 'off',
     'linebreak-style': 'off',
@@ -34,17 +41,17 @@ module.exports = {
     'prefer-destructuring': 'off',
     'prefer-object-spread': 'off'
   },
-  "overrides": [
+  'overrides': [
     {
-      "files": ["*.ts", "*.tsx"],
-      "rules": {
-        "no-undef": "off"
+      'files': ['*.ts', '*.tsx'],
+      'rules': {
+        'no-undef': 'off'
       }
     },
     {
-      "files": ["*.(spec|test).[jt]sx?"],
-      "plugins": ["jest"],
-      "extends": [
+      'files': ['*.(spec|test).[jt]sx?'],
+      'plugins': ['jest'],
+      'extends': [
         'plugin:jest/recommended',
         'plugin:jest/style'
       ]
