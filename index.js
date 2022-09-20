@@ -17,6 +17,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   rules: {
+    'no-restricted-syntax': ['off', 'ForOfStatement'],
     '@typescript-eslint/comma-dangle': ['error', 'never'],
     '@typescript-eslint/no-use-before-define': [
       'error',
