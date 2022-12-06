@@ -19,6 +19,7 @@ module.exports = {
   rules: {
     'no-restricted-syntax': ['off', 'ForOfStatement'],
     '@typescript-eslint/comma-dangle': ['error', 'never'],
+    '@typescript-eslint/lines-between-class-members': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
@@ -28,6 +29,7 @@ module.exports = {
     ],
     'class-methods-use-this': 'off',
     'func-names': 'off',
+    'import/prefer-default-export': 'off',
     'linebreak-style': 'off',
     'lines-between-class-members': 'off',
     'max-len': ['error', {
