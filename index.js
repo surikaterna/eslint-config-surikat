@@ -20,6 +20,7 @@ module.exports = {
     'no-restricted-syntax': ['off', 'ForOfStatement'],
     '@typescript-eslint/comma-dangle': ['error', 'never'],
     '@typescript-eslint/lines-between-class-members': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
@@ -38,11 +39,13 @@ module.exports = {
     }],
     'no-continue': 'off',
     'no-multi-spaces': ['warn', { exceptions: { VariableDeclarator: true } }],
+    'no-param-reassign': 'off',
     'no-plusplus': 'off',
     'no-underscore-dangle': 'off',
     'object-curly-newline': 'off',
     'prefer-destructuring': 'off',
-    'prefer-object-spread': 'off'
+    'prefer-object-spread': 'off',
+    'promise/no-promise-in-callback': 'off'
   },
   'overrides': [
     {
