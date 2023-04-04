@@ -19,6 +19,7 @@ module.exports = {
   rules: {
     'no-restricted-syntax': ['off', 'ForOfStatement'],
     '@typescript-eslint/comma-dangle': ['error', 'never'],
+    '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/lines-between-class-members': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-use-before-define': [
