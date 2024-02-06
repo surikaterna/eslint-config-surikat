@@ -25,6 +25,14 @@ Extend in your `.eslintrc` file. This is in general all your config file should 
 }
 ```
 
+For React applications, use the React specific config, including lint rules for React and hooks.
+
+```json
+{
+  "extends": "surikat/react"
+}
+```
+
 In some cases, such as when having code in a monorepo, the ESLint config will be merged with configuration files in
 parent directories. To prevent this and only use this config, specify that the configuration file is a root file.
 
